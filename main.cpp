@@ -19,7 +19,7 @@
 #define SHIFTS	5
 #define TYPES	2
 
-//testtest
+#define z 1
 
 /** GENERIC PROCEDURE VARIABLES */
 double elapsed_time; clock_t start_time; ///< Keep track of CPU time
