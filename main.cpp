@@ -19,6 +19,8 @@
 #define SHIFTS	5
 #define TYPES	2
 
+//testtest
+
 /** GENERIC PROCEDURE VARIABLES */
 double elapsed_time; clock_t start_time; ///< Keep track of CPU time
 int seed; ///< Seed of the random number generator
