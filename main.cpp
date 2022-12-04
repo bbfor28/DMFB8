@@ -2,8 +2,8 @@
 //  main.cpp
 //  example code for students Decision Making For Business
 //
-//  Created by Jakob Snauwaert on 24/05/21.
-//  Copyright (c) 2021 Jakob Snauwaert. All rights reserved.
+//  Created by Emile Van de Walle
+//
 //
 
 #include <iostream>
