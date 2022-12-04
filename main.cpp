@@ -2,7 +2,7 @@
 //  main.cpp
 //  example code for students Decision Making For Business
 //
-//  Created by Emile Van de Walle
+//  Created by Emile Van de Walle & Artur Descheemaecker
 //
 //
 
