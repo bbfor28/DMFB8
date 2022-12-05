@@ -91,8 +91,8 @@ void shift_decoding(int shift_code)
  This function reads the shift system used for a hospital department. The function assumes the existence of a directory files in the source directory of main.cpp. If changes are made to the relative path or to the file names, the variable filename should be adapted by the user.
  */
 void read_shift_system()
-{
-    strcpy(filename, "files/Shift_system_dpt_");
+{ 
+    strcpy(filename, "Shift_system_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     input = fopen(filename, "r");
@@ -118,7 +118,7 @@ void read_shift_system()
        Late shift		Code 2
        Night shift		Code 3
        Day off			Code 4*/
-    
+    //shift systeem klopt voor ons
     for (k = 1; k <= number_shifts; k++)
     {
         /// If the shifts start at 3 am or 6 am we define an early shift (and there is no other shift defined as an early shift)
@@ -202,7 +202,7 @@ This function reads the preferences for all nurses for a department, and other c
 void read_personnel_characteristics()
 {
     
-    strcpy(filename, "files/Personnel_dpt_");
+    strcpy(filename, "Personnel_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     input = fopen(filename, "r");
@@ -233,7 +233,7 @@ This function reads the cyclical roster for a department. The function assumes t
 void read_cyclic_roster()
 {
     /** use your own shift ranking used in the input screen of read_shift_system >> it will be automatically transformed to the shift encoding used in the algorithm */
-    strcpy(filename, "files/Cyclic_roster_dpt_");
+    strcpy(filename, "Cyclic_roster_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     input = fopen(filename, "r");
@@ -269,7 +269,7 @@ void read_monthly_roster_rules()
     /** PAY ATTENTION: use your own shift ranking used in the input screen of read_shift_system >> it will be automatically transformed to the shift encoding used in the algorithm */
     for (k = 0; k < number_nurses; k++)
     {
-        strcpy(filename, "files/Constraints_dpt_");
+        strcpy(filename, "Constraints_dpt_");
         strcat(filename, department);
         strcat(filename, ".txt");
         input = fopen(filename, "r");
@@ -341,7 +341,7 @@ void read_input()
 void print_output()
 {
     /** Output is displayed with the shift numbering introduced by the student*/
-    strcpy(filename, "files/Monthly_Roster_dpt_");
+    strcpy(filename, "Monthly_Roster_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     output = fopen(filename, "w");
@@ -440,7 +440,7 @@ void evaluate_line_of_work()
  */
 void evaluate_solution()
 {
-    strcpy(filename, "files/Violations_dpt_");
+    strcpy(filename, "Violations_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     output = fopen(filename, "w");

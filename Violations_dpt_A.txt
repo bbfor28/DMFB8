@@ -2,7 +2,7 @@ The total preference score is 25928.
 The constraint 'maximum number of consecutive working days' is violated 37 times.
 The constraint 'maximum number of consecutive working days per shift type' is violated 0 times.
 The constraint 'minimum number of assignments' is violated 0 times.
-The constraint 'maximum number of assignments' is violated 38 times. 
+The constraint 'maximum number of assignments' is violated 38 times.
 
 The staffing requirements are violated as follows:
 There are too few nurses in shift 1 on day 0: 0 < 5.
