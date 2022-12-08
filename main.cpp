@@ -489,7 +489,16 @@ void evaluate_solution()
  */
 void procedure()
 {
-    /**TO IMPLEMENT*/
+    /**TO IMPLEMENT
+     * 
+     * STEPS:
+     * - input has already been read
+     * - attach cyclic roster to individual nurses with the penalty system
+     * 
+     * 
+    */
+
+
     
     for (k = 0; k < number_nurses; k++)			// Example: set your monthly roster exactly equal to the cyclic roster
     {	for (i = 0; i < number_days; i++)
