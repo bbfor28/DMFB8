@@ -1045,7 +1045,7 @@ void accountForEmployementPercentage(int type) {
 		int current_ass = 0;
 		int current_pref[DAYS];
 
-		std::vector<std::vector<int>> current_max_aversion_days;
+		std::vector<std::vector<int> > current_max_aversion_days;
 		std::vector<int> temp;
 		temp.push_back(-1);
 		for (int j = 0; j < 7; j++)
