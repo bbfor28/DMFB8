@@ -177,7 +177,7 @@ void restart() {
 
 void read_shift_system()
 {
-    strcpy(filename, "files/Shift_system_dpt_");
+    strcpy(filename, "Shift_system_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     input = fopen(filename, "r");
@@ -294,7 +294,7 @@ void read_cyclic_roster() {
 	//hardcoded for now
 	number_nurses = NURSES_CYCLIC;
 
-	strcpy(filename, "files/Cyclic_roster_dpt_");     //NOTE: save textfiles UTF 8 coded !!!!!!!
+	strcpy(filename, "Cyclic_roster_dpt_");     //NOTE: save textfiles UTF 8 coded !!!!!!!
 	strcat(filename, department);
 	strcat(filename, ".txt");
 	input = fopen(filename, "r");
@@ -323,7 +323,7 @@ void read_personnel_characteristics()
     
 
 	 //load all requirements for the first number of nurse type 1's needed
-    strcpy(filename, "files/Personnel_dpt_");
+    strcpy(filename, "Personnel_dpt_");
     strcat(filename, department);
     strcat(filename, ".txt");
     input = fopen(filename, "r");
@@ -350,7 +350,7 @@ void read_monthly_roster_rules()
     /* PAY ATTENTION: use your own shift ranking used in the input screen of read_shift_system >> it will be automatically transformed to the shift encoding used in the algorithm */
     for (k = 0; k < number_nurses; k++)
     {
-        strcpy(filename, "files/Constraints_dpt_");
+        strcpy(filename, "Constraints_dpt_");
         strcat(filename, department);
         strcat(filename, ".txt");
         input = fopen(filename, "r");
@@ -450,7 +450,7 @@ void print_output(int repetition, int aversionscore, int violations)
 	const char rep = repetition;
 	const char aversion = aversionscore;
 
-    strcpy(filename, "files/bestRosters/");
+    strcpy(filename, "bestRosters/");
 	strcat(filename, "_");
 	strcat(filename, std::to_string(aversionscore).c_str());
 	strcat(filename, "_");
@@ -497,7 +497,7 @@ void print_output(int repetition, int aversionscore, int violations)
     fclose(output);
 
 	//MONTHLY_AVERSION
-	strcpy(filename, "files/Monthly_Aversion_dpt_");
+	strcpy(filename, "Monthly_Aversion_dpt_");
 	strcat(filename, department);
 	strcat(filename, ".txt");
 	output = fopen(filename, "w");
@@ -678,7 +678,7 @@ int evaluate_budget()
 }
 int* evaluate_solution()
 {
-	strcpy(filename, "files/Violations_dpt_");
+	strcpy(filename, "Violations_dpt_");
 	strcat(filename, department);
 	strcat(filename, ".txt");
 	output = fopen(filename, "w");
