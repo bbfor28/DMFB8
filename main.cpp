@@ -784,7 +784,6 @@ int* evaluate_solution()
 
 void add_nurse_to_day_shift(int nurseID, int dayID, int shiftID)
 {
-<<<<<<< HEAD
 	monthly_roster[nurseID][dayID] = shiftID; //Remark: shiftID has been defined in read_shift_system: 0 (early), 1 (day), 2 (late), 3 (night) and 4 (free) 
 }
 int getDayWithHighestAversion(int nurseID) {
@@ -1095,23 +1094,6 @@ void accountForEmployementPercentage(int type) {
 					addedDays++;
 				}
 			}
-=======
-    /**TO IMPLEMENT
-     * 
-     * STEPS:
-     * - input has already been read
-     * - attach cyclic roster to individual nurses with the penalty system
-     * 
-     * 
-    */
-
-
-    
-    for (k = 0; k < number_nurses; k++)			// Example: set your monthly roster exactly equal to the cyclic roster
-    {	for (i = 0; i < number_days; i++)
-        monthly_roster[k][i] = cyclic_roster[k][i];
-    }	
->>>>>>> 0ad43eb6e6fcae46568547ff766da164e1584e3a
 
 			//assign every too much assignment (j) to a nurse (kk) that hasn't reached max_ass and is free on the given day!
 			bool assigned = false;
